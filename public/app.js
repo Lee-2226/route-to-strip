@@ -78,11 +78,12 @@ $("#downloadJSON").onclick=()=>{try{let blob=new Blob([JSON.stringify(exportData
 $("#copyJSON").onclick=async()=>{let txt=JSON.stringify(exportData(),null,2);try{await navigator.clipboard.writeText(txt);$("#layoutStatus").textContent="Board JSON copied."}catch(e){$("#jsonFallback").value=txt;$("#jsonFallback").classList.remove("hide");$("#jsonFallback").select();$("#layoutStatus").textContent="Clipboard blocked. JSON is selected below — copy it manually."}}
 $("#importJSON").onchange=async e=>{try{let d=JSON.parse(await e.target.files[0].text());let m=new Map(d.layout.map(v=>[String(v.id),v]));L.forEach(n=>{let v=m.get(n.id);if(v)Object.assign(n,{x:+v.x,y:+v.y,w:+v.w,h:+v.h})});drawL();$("#layoutStatus").textContent="Imported. Click Save Layout."}catch(e){$("#layoutStatus").textContent="Invalid JSON."}};
 function deck(d){return d.map(c=>`${c.text} | ${c.move||0} | ${c.effect||"none"} | ${c.value||0}`).join("\n")}function parse(id){return $(id).value.split("\n").filter(Boolean).map(l=>{let [text,move,effect,value]=l.split("|").map(x=>x.trim());return{text,move:+move||0,effect:effect||"none",value:+value||0}})}
+const WORKOUT_SHORTCUTS=new Set(["S4","S10","S15"]);
 $("#edit").onclick=()=>{
  const large=state.nodes.filter(n=>["event","workout","effect"].includes(n.type));
  $("#eventRows").innerHTML=large.map(n=>{
   const isS=n.id.startsWith("S");
-  const tc=isS?`<span class="eventType">EVENT</span>`:`<select class="tp"><option value="event" ${n.type==="event"?"selected":""}>event</option><option value="workout" ${n.type==="workout"?"selected":""}>work-out time</option><option value="effect" ${n.type==="effect"?"selected":""}>effect</option></select>`;
+  const tc=isS?`<span class="eventType">${WORKOUT_SHORTCUTS.has(n.id)?"WORK-OUT TIME":"EVENT"}</span>`:`<select class="tp"><option value="event" ${n.type==="event"?"selected":""}>event</option><option value="workout" ${n.type==="workout"?"selected":""}>work-out time</option><option value="effect" ${n.type==="effect"?"selected":""}>effect</option></select>`;
   const nm=n.type==="workout"?"WORK-OUT TIME":n.type==="effect"?"EFFECT":(n.name||"EVENT");
   return `<div class="eventrow" data-id="${E(n.id)}"><b>${E(n.id)}</b><input class="nm" value="${E(nm)}">${tc}<input class="ev" value="${E(n.event||"")}" placeholder="Event / task text"></div>`
  }).join("");
@@ -91,7 +92,7 @@ $("#edit").onclick=()=>{
  $("#contentModal").classList.remove("hide")
 };
 $("#contentClose").onclick=()=>$("#contentModal").classList.add("hide");$("#saveContent").onclick=()=>{
- let events=[...document.querySelectorAll(".eventrow")].map(r=>({id:r.dataset.id,name:r.querySelector(".nm").value,type:r.dataset.id.startsWith("S")?"event":(r.querySelector(".tp")?.value||"event"),event:r.querySelector(".ev").value}));
+ let events=[...document.querySelectorAll(".eventrow")].map(r=>({id:r.dataset.id,name:r.querySelector(".nm").value,type:WORKOUT_SHORTCUTS.has(r.dataset.id)?"workout":(r.dataset.id.startsWith("S")?"event":(r.querySelector(".tp")?.value||"event")),event:r.querySelector(".ev").value}));
  events.forEach(e=>{let n=state.nodes.find(n=>String(n.id)===String(e.id));if(!n)return;n.type=e.type;n.event=e.event;n.name=e.type==="chance"?"CHANCE":e.type==="destiny"?"DESTINY":e.name;if(e.type==="event"){let z=eventAutoSize(n,e.event);n.w=Math.max(n.w,z[0]);n.h=Math.max(n.h,z[1])}});
  deOverlapNodes(state.nodes);
  s.emit("saveLayout",{layout:state.nodes.map(n=>({id:n.id,x:n.x,y:n.y,w:n.w,h:n.h}))});
@@ -102,7 +103,7 @@ function collectContent(){
  let events=[...document.querySelectorAll(".eventrow")].map(r=>({
    id:r.dataset.id,
    name:r.querySelector(".nm").value,
-   type:r.dataset.id.startsWith("S")?"event":(r.querySelector(".tp")?.value||"event"),
+   type:WORKOUT_SHORTCUTS.has(r.dataset.id)?"workout":(r.dataset.id.startsWith("S")?"event":(r.querySelector(".tp")?.value||"event")),
    event:r.querySelector(".ev").value
  }));
  return {

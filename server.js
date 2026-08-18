@@ -6,13 +6,14 @@ function tile(r,id){return r.nodes.find(n=>n.id===String(id))}function emit(r,m=
 function step(r,p){let n=tile(r,p.pos);if(n&&n.next)p.pos=n.next}function move(r,p,k){while(k-->0)step(r,p)}
 function exact50(p,m){if(p.pos==="50"){p.pos="S1";return m+" Exact landing on 50 — enter Shortcut S1."}return m}
 function cleanDeck(d){return Array.isArray(d)?d.map(c=>({text:String(c.text||"").slice(0,240),move:+c.move||0,effect:c.effect||"none",value:+c.value||0})).filter(c=>c.text):[]}
+const WORKOUT_SHORTCUTS=new Set(["S4","S10","S15"]);
 io.on("connection",s=>{
 s.on("createRoom",({name})=>{let c=code(),b=clone(BASE),r={code:c,host:s.id,started:false,turn:0,nodes:b.nodes,workout:b.workout,effects:b.effects,pending:null,players:[{id:s.id,name:name||"Host",pos:"1",nextEffect:null}]};rooms.set(c,r);s.join(c);s.data.room=c;emit(r,"Room created.")});
 s.on("joinRoom",({name,code})=>{let r=rooms.get(String(code||"").toUpperCase());if(!r||r.started)return s.emit("err","Room unavailable.");r.players.push({id:s.id,name:name||"Player",pos:"1",nextEffect:null});s.join(r.code);s.data.room=r.code;emit(r,(name||"Player")+" joined.")});
 s.on("saveLayout",({layout})=>{let r=rooms.get(s.data.room);if(!r||r.host!==s.id||r.started)return;layout.forEach(v=>{let n=tile(r,v.id);if(n){n.x=+v.x;n.y=+v.y;n.w=+v.w;n.h=+v.h;
-if(n.w===60&&n.h===60){if(String(n.id).startsWith("S"))n.type="event";else if(!["event","workout","effect"].includes(n.type))n.type="event"}else n.type=String(n.id).startsWith("S")?"shortcut":"normal"}});emit(r,"Layout saved.")});
+if(n.w===60&&n.h===60){if(WORKOUT_SHORTCUTS.has(String(n.id)))n.type="workout";else if(String(n.id).startsWith("S"))n.type="event";else if(!["event","workout","effect"].includes(n.type))n.type="event"}else n.type=String(n.id).startsWith("S")?(WORKOUT_SHORTCUTS.has(String(n.id))?"workout":"shortcut"):"normal"}});emit(r,"Layout saved.")});
 s.on("saveContent",x=>{let r=rooms.get(s.data.room);if(!r||r.host!==s.id||r.started)return;if(Array.isArray(x.events))x.events.forEach(e=>{let n=tile(r,e.id);if(n){n.name=e.name;
-n.type=String(n.id).startsWith("S")?"event":(["event","workout","effect"].includes(e.type)?e.type:"event");
+n.type=WORKOUT_SHORTCUTS.has(String(n.id))?"workout":(String(n.id).startsWith("S")?"event":(["event","workout","effect"].includes(e.type)?e.type:"event"));
 n.event=e.event}});let c=cleanDeck(x.workout),d=cleanDeck(x.effects);if(c.length)r.workout=c;if(d.length)r.effects=d;emit(r,"Content saved.")});
 s.on("startGame",()=>{let r=rooms.get(s.data.room);if(r&&r.host===s.id&&r.players.length>=2){r.started=true;emit(r,"Game started.")}});
 
