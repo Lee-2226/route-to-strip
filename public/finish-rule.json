@@ -1,0 +1,11 @@
+{
+  "finishSpace": 100,
+  "overshootStopsAt100": true,
+  "winnerAction": "You can choose one player to cum.",
+  "finishedPlayers": [
+    "winner",
+    "chosenPlayer"
+  ],
+  "remainingPlayers": "may continue playing",
+  "gameEndsCompletelyWhen": "no active players remain, or the group decides to stop"
+}

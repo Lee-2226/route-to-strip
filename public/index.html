@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rainbow Route v10</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>Route to Strip</h1>
+<div class="byline">Made by Lee</div><p>Editable 1–100 board · S1–S15 shortcut · multiplayer</p></header><main>
+<section id="lobby" class="panel lobby"><input id="name" placeholder="Player name"><button id="create">Create Room</button><div><input id="codeIn" placeholder="ROOM"><button id="join">Join</button></div><p id="err"></p></section>
+<section id="game" class="hide"><div class="bar panel"><b>ROOM <span id="room"></span></b><button id="layoutBtn">🧩 Board Layout</button><button id="edit">✏️ Events & Cards</button><button id="start">Start</button><button id="roll" class="hide">🎲 Roll</button></div><div id="msg" class="panel"></div><div id="players"></div><div id="targetBox" class="panel hide"><h3>Choose a Player</h3><p id="targetText"></p><div id="targetButtons"></div></div>
+<div id="chatPanel" class="chatPanel panel">
+  <div class="chatTitle">
+    <h3>Room Chat</h3>
+    <span>Everyone in this room can see these messages.</span>
+  </div>
+  <div id="chatLog" class="chatLog"></div>
+  <div class="chatSend">
+    <input id="chatInput" maxlength="500" placeholder="Message the room…">
+    <button id="chatSend">Send</button>
+  </div>
+</div>
+<div class="board"><svg id="board" viewBox="0 0 6000 3100"></svg></div></section></main>
+<div id="layoutModal" class="modal hide"><div class="editor panel"><div class="head"><h2>Board Layout Editor</h2><button id="layoutClose">✕</button></div><div class="tools"><button id="snap">Snap ON</button><label>X <input id="x" type="number"></label><label>Y <input id="y" type="number"></label><label>W <input id="w" type="number"></label><label>H <input id="h" type="number"></label><button id="makeSmall">40×40</button><button id="makeLarge">60×60</button><button id="saveLayout">Save Layout</button><button id="downloadJSON">Download JSON</button><button id="copyJSON">Copy Board JSON</button><label class="filebtn">Import JSON<input id="importJSON" type="file" accept=".json"></label></div><p id="layoutStatus">Select a tile. Drag it, or drag the pink corner to resize.</p><div class="canvas"><svg id="layoutCanvas" viewBox="0 0 6000 3100"></svg></div><textarea id="jsonFallback" class="hide" rows="8"></textarea></div></div>
+<div id="contentModal" class="modal hide"><div class="editor panel"><div class="head"><h2>Events & Cards</h2><button id="contentClose">✕</button></div><div id="eventRows"></div><h3>Work-Out Time</h3><p>Format: text | move | effect | value. Effects: none, target_move, target_goto, target_choose_goto, swap, swap_two, next_exact, skip, target_task</p><textarea id="chance" rows="7"></textarea><h3>Effect</h3><p>Format: text | move | effect | value. Effects: none, target_move, target_goto, target_choose_goto, swap, swap_two, next_exact, skip, target_task</p><textarea id="destiny" rows="7"></textarea><div class="contentExportTools">
+<button id="saveContent">Save Content</button>
+<button id="exportContent">⬇ Export Event + Cards</button>
+<button id="copyContent">📋 Copy Event + Cards</button>
+<label class="filebtn">⬆ Import Event + Cards<input id="importContent" type="file" accept=".json,application/json"></label>
+</div>
+<p id="contentStatus"></p><textarea id="contentFallback" class="hide" rows="8"></textarea></div></div>
+<script src="/socket.io/socket.io.js"></script><script src="app.js"></script></body></html>

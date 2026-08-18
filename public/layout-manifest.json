@@ -1,0 +1,6 @@
+{
+  "main_layout": "10x10 snake",
+  "shortcut_layout": "separate 2-row S1-S15 lane",
+  "overlap_count": 0,
+  "source_export": "rainbow-route-events-cards-3.json"
+}

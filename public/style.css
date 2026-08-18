@@ -1,0 +1,91 @@
+*{box-sizing:border-box}body{margin:0;background:#12141a;color:#f7f7fa;font-family:Arial,sans-serif}header{padding:14px 3vw;background:#20232d}header h1,header p{margin:2px}main{max-width:1500px;margin:auto;padding:14px}.panel{background:#1c1f28;border:1px solid #404555;border-radius:12px;padding:12px}.lobby{max-width:430px;margin:8vh auto}.hide{display:none!important}button,input,textarea,select{font:inherit;color:white;background:#12151d;border:1px solid #53596a;border-radius:7px;padding:7px;margin:3px}button{font-weight:bold;cursor:pointer}.bar{display:flex;gap:6px;align-items:center}.bar b{margin-right:auto}#players{display:flex;gap:7px;margin:8px 0}.player{padding:8px;background:#242833;border-radius:8px}.turn{outline:2px solid white}.board{overflow:auto;background:#eeeae4;border-radius:10px}.board svg{min-width:1200px;background:#f6f3ed;display:block}.edge{stroke:#30344b;stroke-width:3}.shortcut{stroke:#a13b8b;stroke-width:4;stroke-dasharray:7 5}.tile rect,.ltile rect{fill:#fffdfa;stroke:#282c48;stroke-width:2.5;rx:3}.tile.event rect{fill:#fff8ec}.tile.chance rect{fill:#f4e9ff}.tile.destiny rect{fill:#eaf5ff}.tile text,.ltile text{fill:#252943;font-weight:bold;font-size:10px}.token{stroke:#111}.modal{position:fixed;inset:0;background:#000c;padding:2vh 2vw;z-index:10}.editor{height:96vh;max-width:1450px;margin:auto;overflow:auto}.head{display:flex;align-items:center}.head h2{flex:1}.tools{display:flex;gap:5px;flex-wrap:wrap;align-items:center}.tools input{width:68px}.canvas{height:76vh;overflow:auto;background:#ddd}.canvas svg{min-width:1200px;background:#f6f3ed}.selected rect:first-child{stroke:#e43ebc;stroke-width:5}.handle{fill:#e43ebc!important;stroke:white!important;cursor:nwse-resize}.filebtn{border:1px solid #53596a;border-radius:7px;padding:7px;cursor:pointer}.filebtn input{display:none}.eventrow{display:grid;grid-template-columns:65px 140px 90px 1fr;gap:5px;margin:4px}.eventrow input,.eventrow select{width:100%}textarea{width:100%}
+.eventType{padding:8px;text-align:center;font-weight:900;border:1px solid #53596a;border-radius:7px}
+
+.tileNum{font-size:7px!important;font-weight:800;opacity:.65}
+.tileLabel{font-weight:800;pointer-events:none}
+.tile.chance .tileLabel,.tile.destiny .tileLabel{font-size:9px}
+
+/* v22: show full event text */
+.node,.tile,.space{overflow:visible}.eventText,.event{white-space:normal!important;text-overflow:clip!important;overflow:visible!important;overflow-wrap:anywhere}
+
+/* v23 category colors */
+.tile.workout rect { fill:#dff4df!important; stroke:#4f8a5b!important; }
+.tile.effect rect { fill:#eee2f7!important; stroke:#80559c!important; }
+.tile.workout text,.tile.effect text { fill:#1f2937!important; }
+
+/* v25 larger board typography */
+.tileLabel { font-size: 13px !important; font-weight: 800 !important; }
+.tile.event .tileLabel { font-size: 12px !important; }
+.tile.workout .tileLabel, .tile.effect .tileLabel { font-size: 14px !important; }
+.tileNum { font-size: 9px !important; font-weight: 900 !important; }
+
+/* v26 finish space */
+.tile.finish rect { fill:#fff3b0!important; stroke:#b7791f!important; stroke-width:3px!important; }
+.tile.finish .tileLabel { font-size:16px!important; font-weight:900!important; }
+
+/* v27 finish rule */
+.tile.finish .tileLabel { font-size:15px!important; line-height:1.2!important; }
+
+/* v28 larger, more readable board text */
+.tileLabel { font-size: 16px !important; line-height: 1.18 !important; font-weight: 800 !important; }
+.tile.event .tileLabel { font-size: 15px !important; }
+.tile.workout .tileLabel, .tile.effect .tileLabel { font-size: 17px !important; font-weight: 900 !important; }
+.tile.finish .tileLabel { font-size: 18px !important; font-weight: 900 !important; }
+.tileNum { font-size: 11px !important; font-weight: 900 !important; }
+
+/* v29: larger readable text */
+.tileLabel{font-size:22px!important;line-height:1.2!important;font-weight:850!important}
+.tile.event .tileLabel{font-size:21px!important}
+.tile.workout .tileLabel,.tile.effect .tileLabel{font-size:23px!important;font-weight:900!important}
+.tile.finish .tileLabel{font-size:24px!important;font-weight:900!important}
+.tileNum{font-size:15px!important;font-weight:900!important}
+
+/* v30: readable text with breathing room */
+.tileLabel{
+  font-size:18px!important;
+  line-height:1.28!important;
+  font-weight:800!important;
+}
+.tile.event .tileLabel{font-size:17px!important}
+.tile.workout .tileLabel,.tile.effect .tileLabel{
+  font-size:19px!important;
+  font-weight:900!important;
+}
+.tile.finish .tileLabel{
+  font-size:20px!important;
+  line-height:1.3!important;
+  font-weight:900!important;
+}
+.tileNum{font-size:13px!important;font-weight:900!important}
+
+/* v31 fixed: larger clean board text */
+.tileNum{display:none!important}
+.tileLabel{font-size:16px!important;font-weight:850!important}
+.tile.workout .tileLabel,.tile.effect .tileLabel{font-size:17px!important;font-weight:900!important}
+.tile.finish .tileLabel{font-size:18px!important;font-weight:900!important}
+
+/* v32 extra-large readable tiles */
+.tileLabel{font-size:22px!important;font-weight:850!important}
+.tile.event .tileLabel{font-size:22px!important}
+.tile.workout .tileLabel,.tile.effect .tileLabel{font-size:24px!important;font-weight:900!important}
+.tile.finish .tileLabel{font-size:25px!important;font-weight:900!important}
+
+/* v36 chat-only */
+.chatPanel{margin:10px 0}
+.chatTitle{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.chatTitle h3{margin:0}
+.chatTitle span{color:#aeb4c2;font-size:13px}
+.chatLog{height:220px;overflow:auto;background:#11141b;border:1px solid #343a49;border-radius:9px;padding:10px;margin-top:8px}
+.chatMsg{padding:7px 4px;border-bottom:1px solid #2a2f3c}
+.chatMsg:last-child{border-bottom:0}
+.chatMeta{display:flex;align-items:center;gap:8px;margin-bottom:3px}
+.chatMeta small{color:#9097a8}
+.chatText{overflow-wrap:anywhere;white-space:pre-wrap}
+.chatSend{display:flex;gap:7px;margin-top:8px}
+.chatSend input{flex:1;min-width:0}
+
+/* Route to Strip branding */
+.byline{margin-top:-6px;margin-bottom:12px;font-size:14px;opacity:.72;font-weight:600}
+
+/* v37 larger, obvious player tokens */
+.token{stroke:#111!important;stroke-width:3px!important;filter:drop-shadow(0 1px 2px #0008)}

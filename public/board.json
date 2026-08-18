@@ -1,0 +1,1441 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "name": "START",
+      "type": "normal",
+      "event": "",
+      "next": "2",
+      "x": 205.0,
+      "y": 155.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "2",
+      "name": "2",
+      "type": "normal",
+      "event": "",
+      "next": "3",
+      "x": 611.6666666666667,
+      "y": 155.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "3",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Strip one item.",
+      "next": "4",
+      "x": 903.3333333333335,
+      "y": 127.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "4",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Choose players to remove two items of.",
+      "next": "5",
+      "x": 1310.0,
+      "y": 127.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "5",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "6",
+      "x": 1726.6666666666667,
+      "y": 132.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "6",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Strip down to your underwear and get hard.",
+      "next": "7",
+      "x": 2123.333333333333,
+      "y": 127.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "7",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Choose a player to strip naked.",
+      "next": "8",
+      "x": 2530.0,
+      "y": 127.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "8",
+      "name": "8",
+      "type": "normal",
+      "event": "",
+      "next": "9",
+      "x": 3051.6666666666665,
+      "y": 155.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "9",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "10",
+      "x": 3353.3333333333335,
+      "y": 132.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "10",
+      "name": "10",
+      "type": "normal",
+      "event": "",
+      "next": "11",
+      "x": 3865.0,
+      "y": 155.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "11",
+      "name": "11",
+      "type": "normal",
+      "event": "",
+      "next": "12",
+      "x": 3865.0,
+      "y": 402.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "12",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Strip one item.",
+      "next": "13",
+      "x": 3343.3333333333335,
+      "y": 374.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "13",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Ask a player a truth question.",
+      "next": "14",
+      "x": 2936.6666666666665,
+      "y": 374.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "14",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Choose a player to strip naked.",
+      "next": "15",
+      "x": 2530.0,
+      "y": 374.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "15",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "16",
+      "x": 2133.333333333333,
+      "y": 379.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "16",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Choose a player to strip down to his underwear and get hard.",
+      "next": "17",
+      "x": 1716.6666666666667,
+      "y": 367.5,
+      "w": 300,
+      "h": 139
+    },
+    {
+      "id": "17",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "18",
+      "x": 1320.0,
+      "y": 379.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "18",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Ask a player a truth question.",
+      "next": "19",
+      "x": 903.3333333333335,
+      "y": 374.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "19",
+      "name": "19",
+      "type": "normal",
+      "event": "",
+      "next": "20",
+      "x": 611.6666666666667,
+      "y": 402.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "20",
+      "name": "EVENT ",
+      "type": "event",
+      "event": "Strip naked.",
+      "next": "21",
+      "x": 90.0,
+      "y": 374.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "21",
+      "name": "21",
+      "type": "normal",
+      "event": "",
+      "next": "22",
+      "x": 205.0,
+      "y": 649.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "22",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Ask a player a truth question.",
+      "next": "23",
+      "x": 496.66666666666674,
+      "y": 621.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "23",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Strip one item.",
+      "next": "24",
+      "x": 903.3333333333335,
+      "y": 621.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "24",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "25",
+      "x": 1320.0,
+      "y": 626.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "25",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Choose players to remove two items.",
+      "next": "26",
+      "x": 1716.6666666666667,
+      "y": 621.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "26",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "Strip naked.",
+      "next": "27",
+      "x": 2133.333333333333,
+      "y": 626.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "27",
+      "name": "27",
+      "type": "normal",
+      "event": "",
+      "next": "28",
+      "x": 2645.0,
+      "y": 649.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "28",
+      "name": "28",
+      "type": "normal",
+      "event": "",
+      "next": "29",
+      "x": 3051.6666666666665,
+      "y": 649.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "29",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Choose a player to strip naked.",
+      "next": "30",
+      "x": 3343.3333333333335,
+      "y": 621.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "30",
+      "name": "30",
+      "type": "normal",
+      "event": "",
+      "next": "31",
+      "x": 3865.0,
+      "y": 649.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "31",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke and flex for 30 seconds.",
+      "next": "32",
+      "x": 3750.0,
+      "y": 861.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "32",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Spread ass",
+      "next": "33",
+      "x": 3343.3333333333335,
+      "y": 861.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "33",
+      "name": "33",
+      "type": "normal",
+      "event": "",
+      "next": "34",
+      "x": 3051.6666666666665,
+      "y": 889.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "34",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "35",
+      "x": 2540.0,
+      "y": 866.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "35",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Choose a player to follow orders for 2 minutes.",
+      "next": "36",
+      "x": 2123.333333333333,
+      "y": 861.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "36",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "37",
+      "x": 1726.6666666666667,
+      "y": 866.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "37",
+      "name": "37",
+      "type": "normal",
+      "event": "",
+      "next": "38",
+      "x": 1425.0,
+      "y": 889.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "38",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Show and sniff your armpits while hard.",
+      "next": "39",
+      "x": 903.3333333333335,
+      "y": 861.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "39",
+      "name": "39",
+      "type": "normal",
+      "event": "",
+      "next": "40",
+      "x": 611.6666666666667,
+      "y": 889.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "40",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Pic on all fours, tongue out.",
+      "next": "41",
+      "x": 90.0,
+      "y": 861.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "41",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Get on all fours, face your ass toward the camera, and stroke for 30 seconds.",
+      "next": "42",
+      "x": 90.0,
+      "y": 1101.5,
+      "w": 300,
+      "h": 168
+    },
+    {
+      "id": "42",
+      "name": "42",
+      "type": "normal",
+      "event": "",
+      "next": "43",
+      "x": 611.6666666666667,
+      "y": 1150.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "43",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "44",
+      "x": 913.3333333333335,
+      "y": 1128.0,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "44",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Get on your knees, put your underwear over your face, and stroke for 30 seconds.",
+      "next": "45",
+      "x": 1310.0,
+      "y": 1101.5,
+      "w": 300,
+      "h": 168
+    },
+    {
+      "id": "45",
+      "name": "45",
+      "type": "normal",
+      "event": "",
+      "next": "46",
+      "x": 1831.6666666666667,
+      "y": 1150.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "46",
+      "name": "46",
+      "type": "normal",
+      "event": "",
+      "next": "47",
+      "x": 2238.333333333333,
+      "y": 1150.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "47",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "48",
+      "x": 2540.0,
+      "y": 1128.0,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "48",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "49",
+      "x": 2946.6666666666665,
+      "y": 1128.0,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "49",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Both hands playing nipples for 1 min.",
+      "next": "50",
+      "x": 3343.3333333333335,
+      "y": 1123.0,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "50",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge once.",
+      "next": "51",
+      "x": 3750.0,
+      "y": 1123.0,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "51",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Show a close-up of your cock and any precum.",
+      "next": "52",
+      "x": 3750.0,
+      "y": 1384.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "52",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Show a close-up of your cock and any precum.",
+      "next": "53",
+      "x": 3343.3333333333335,
+      "y": 1384.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "53",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "54",
+      "x": 2946.6666666666665,
+      "y": 1389.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "54",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Follow JOI for 2 minutes.",
+      "next": "55",
+      "x": 2530.0,
+      "y": 1384.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "55",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "56",
+      "x": 2133.333333333333,
+      "y": 1389.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "56",
+      "name": "56",
+      "type": "normal",
+      "event": "",
+      "next": "57",
+      "x": 1831.6666666666667,
+      "y": 1412.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "57",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Fast stroke nonstop for 1 minute.",
+      "next": "58",
+      "x": 1310.0,
+      "y": 1384.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "58",
+      "name": "58",
+      "type": "normal",
+      "event": "",
+      "next": "59",
+      "x": 1018.3333333333335,
+      "y": 1412.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "59",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Show and sniff your armpits while hard.",
+      "next": "60",
+      "x": 496.66666666666674,
+      "y": 1384.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "60",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke and flex for 30 seconds.",
+      "next": "61",
+      "x": 90.0,
+      "y": 1384.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "61",
+      "name": "61",
+      "type": "normal",
+      "event": "",
+      "next": "62",
+      "x": 205.0,
+      "y": 1673.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "62",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "63",
+      "x": 506.66666666666674,
+      "y": 1651.0,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "63",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Get on all fours, face your ass toward the camera, and stroke for 30 seconds.",
+      "next": "64",
+      "x": 903.3333333333335,
+      "y": 1624.5,
+      "w": 300,
+      "h": 168
+    },
+    {
+      "id": "64",
+      "name": "64",
+      "type": "normal",
+      "event": "",
+      "next": "65",
+      "x": 1425.0,
+      "y": 1673.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "65",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "66",
+      "x": 1726.6666666666667,
+      "y": 1651.0,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "66",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Get on your knees, put your underwear over your face, and stroke for 30 seconds.",
+      "next": "67",
+      "x": 2123.333333333333,
+      "y": 1624.5,
+      "w": 300,
+      "h": 168
+    },
+    {
+      "id": "67",
+      "name": "67",
+      "type": "normal",
+      "event": "",
+      "next": "68",
+      "x": 2645.0,
+      "y": 1673.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "68",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "69",
+      "x": 2946.6666666666665,
+      "y": 1651.0,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "69",
+      "name": "69",
+      "type": "normal",
+      "event": "",
+      "next": "70",
+      "x": 3458.3333333333335,
+      "y": 1673.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "70",
+      "name": "EVENT 70",
+      "type": "event",
+      "event": "Choose a player to Edge once.",
+      "next": "71",
+      "x": 3750.0,
+      "y": 1646.0,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "71",
+      "name": "71",
+      "type": "normal",
+      "event": "",
+      "next": "72",
+      "x": 3865.0,
+      "y": 1935.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "72",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "73",
+      "x": 3353.3333333333335,
+      "y": 1912.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "73",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge once.",
+      "next": "74",
+      "x": 2936.6666666666665,
+      "y": 1907.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "74",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "75",
+      "x": 2540.0,
+      "y": 1912.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "75",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Polish your head for 1 min",
+      "next": "76",
+      "x": 2123.333333333333,
+      "y": 1907.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "76",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Polish your head for 1 min",
+      "next": "77",
+      "x": 1716.6666666666667,
+      "y": 1907.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "77",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "78",
+      "x": 1320.0,
+      "y": 1912.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "78",
+      "name": "78",
+      "type": "normal",
+      "event": "",
+      "next": "79",
+      "x": 1018.3333333333335,
+      "y": 1935.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "79",
+      "name": "79",
+      "type": "normal",
+      "event": "",
+      "next": "80",
+      "x": 611.6666666666667,
+      "y": 1935.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "80",
+      "name": "80",
+      "type": "normal",
+      "event": "",
+      "next": "81",
+      "x": 205.0,
+      "y": 1935.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "81",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "82",
+      "x": 100.0,
+      "y": 2152.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "82",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Rub your tip for 1 min",
+      "next": "83",
+      "x": 1005.0,
+      "y": 2147.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "83",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Rub your tip for 1 min",
+      "next": "84",
+      "x": 1920.0,
+      "y": 2147.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "84",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "85",
+      "x": 2845.0,
+      "y": 2152.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "85",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "86",
+      "x": 3760.0,
+      "y": 2152.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "86",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Follow JOI for 2 minutes.",
+      "next": "87",
+      "x": 3750.0,
+      "y": 2394.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "87",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge five times using different positions or techniques.",
+      "next": "88",
+      "x": 3343.3333333333335,
+      "y": 2387.5,
+      "w": 300,
+      "h": 139
+    },
+    {
+      "id": "88",
+      "name": "88",
+      "type": "normal",
+      "event": "",
+      "next": "89",
+      "x": 3051.6666666666665,
+      "y": 2422.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "89",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "90",
+      "x": 2540.0,
+      "y": 2399.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "90",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge five times using different positions or techniques.",
+      "next": "91",
+      "x": 2123.333333333333,
+      "y": 2387.5,
+      "w": 300,
+      "h": 139
+    },
+    {
+      "id": "91",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "92",
+      "x": 1726.6666666666667,
+      "y": 2399.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "92",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Ruined. Keep playing afterward.",
+      "next": "93",
+      "x": 1310.0,
+      "y": 2394.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "93",
+      "name": "93",
+      "type": "normal",
+      "event": "",
+      "next": "94",
+      "x": 1018.3333333333335,
+      "y": 2422.0,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "94",
+      "name": "EFFECT",
+      "type": "effect",
+      "event": "",
+      "next": "95",
+      "x": 506.66666666666674,
+      "y": 2399.5,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "95",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke nonstop for 2 minutes.",
+      "next": "96",
+      "x": 90.0,
+      "y": 2394.5,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "96",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Follow one order from each player.",
+      "next": "97",
+      "x": 90.0,
+      "y": 2669.0,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "97",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Follow one order from each player.",
+      "next": "98",
+      "x": 1005.0,
+      "y": 2669.0,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "98",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke for 30 seconds, then go soft.",
+      "next": "99",
+      "x": 1920.0,
+      "y": 2669.0,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "99",
+      "name": "99",
+      "type": "normal",
+      "event": "",
+      "next": "100",
+      "x": 2950.0,
+      "y": 2696.5,
+      "w": 70,
+      "h": 70
+    },
+    {
+      "id": "100",
+      "name": "WIN THE GAME",
+      "type": "finish",
+      "event": "You can choose one player to cum.",
+      "next": null,
+      "x": 3685.0,
+      "y": 2641.5,
+      "w": 430,
+      "h": 180
+    },
+    {
+      "id": "S1",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge five times using different positions or techniques.",
+      "next": "S2",
+      "x": 4330.0,
+      "y": 1180.03125,
+      "w": 300,
+      "h": 139
+    },
+    {
+      "id": "S2",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke nonstop for 2 minutes.",
+      "next": "S3",
+      "x": 4740.0,
+      "y": 1251.0625,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S3",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Follow one order from each player.",
+      "next": "S4",
+      "x": 5140.0,
+      "y": 1315.09375,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S4",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "S5",
+      "x": 4390.0,
+      "y": 1384.125,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "S5",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke for 30 seconds, then go soft.",
+      "next": "S6",
+      "x": 4690.0,
+      "y": 1443.15625,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S6",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge five times using different positions or techniques.",
+      "next": "S7",
+      "x": 5020.0,
+      "y": 1500.1875,
+      "w": 300,
+      "h": 139
+    },
+    {
+      "id": "S7",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke nonstop for 2 minutes.",
+      "next": "S8",
+      "x": 4330.0,
+      "y": 1571.21875,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S8",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Follow one order from each player.",
+      "next": "S9",
+      "x": 5340.0,
+      "y": 1635.25,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S9",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge five times using different positions or techniques.",
+      "next": "S10",
+      "x": 4660.0,
+      "y": 1692.28125,
+      "w": 300,
+      "h": 139
+    },
+    {
+      "id": "S10",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "S11",
+      "x": 4990.0,
+      "y": 1768.3125,
+      "w": 280,
+      "h": 115
+    },
+    {
+      "id": "S11",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Ruined. Keep playing afterward.",
+      "next": "S12",
+      "x": 4330.0,
+      "y": 1827.34375,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S12",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Follow one order from each player.",
+      "next": "S13",
+      "x": 4660.0,
+      "y": 1891.375,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S13",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Stroke for 30 seconds, then go soft.",
+      "next": "S14",
+      "x": 5050.0,
+      "y": 1955.40625,
+      "w": 300,
+      "h": 125
+    },
+    {
+      "id": "S14",
+      "name": "EVENT",
+      "type": "event",
+      "event": "Edge five times using different positions or techniques.",
+      "next": "S15",
+      "x": 5460.0,
+      "y": 2012.4375,
+      "w": 300,
+      "h": 139
+    },
+    {
+      "id": "S15",
+      "name": "WORK-OUT TIME",
+      "type": "workout",
+      "event": "",
+      "next": "85",
+      "x": 4355.0,
+      "y": 2088.46875,
+      "w": 280,
+      "h": 115
+    }
+  ],
+  "workout": [
+    {
+      "text": "Do 10 jumping jacks.",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Do 20 squats. (10 front, 10 back.)",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Hold a side plank for 30 seconds",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Do 15 push-ups.",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Do helicopter for 30 s",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    }
+  ],
+  "effects": [
+    {
+      "text": "Choose a player. Move them forward 1 space.",
+      "move": 0,
+      "effect": "target_move",
+      "value": 1
+    },
+    {
+      "text": "Choose a player. Move them forward 3 spaces.",
+      "move": 0,
+      "effect": "target_move",
+      "value": 3
+    },
+    {
+      "text": "Choose a player. Move them forward 5 spaces.",
+      "move": 0,
+      "effect": "target_move",
+      "value": 5
+    },
+    {
+      "text": "Choose a player. Move them backward 1 space.",
+      "move": 0,
+      "effect": "target_move",
+      "value": -1
+    },
+    {
+      "text": "Choose a player. Move them backward 3 spaces.",
+      "move": 0,
+      "effect": "target_move",
+      "value": -3
+    },
+    {
+      "text": "Choose a player. Move them backward 5 spaces.",
+      "move": 0,
+      "effect": "target_move",
+      "value": -5
+    },
+    {
+      "text": "Choose a player and swap positions with them.",
+      "move": 0,
+      "effect": "swap",
+      "value": 0
+    },
+    {
+      "text": "Choose two other players and swap their positions.",
+      "move": 0,
+      "effect": "swap_two",
+      "value": 0
+    },
+    {
+      "text": "Choose a player and swap positions with them.",
+      "move": 0,
+      "effect": "swap",
+      "value": 0
+    },
+    {
+      "text": "Choose two other players and swap their positions.",
+      "move": 0,
+      "effect": "swap_two",
+      "value": 0
+    },
+    {
+      "text": "Choose a player. They skip their next turn.",
+      "move": 0,
+      "effect": "skip",
+      "value": 1
+    },
+    {
+      "text": "Choose a player. They skip their next turn.",
+      "move": 0,
+      "effect": "skip",
+      "value": 1
+    },
+    {
+      "text": "Give a dare to a player",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Give a dare to a player",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Give a dare to a player",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Give a dare to a player",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Give a dare to a player",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Give three dares to players",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Choose a player to put underwear back",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Choose a player to go soft on cam",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Choose a player to do a strip show (from fully clothes)",
+      "move": 0,
+      "effect": "none",
+      "value": 0
+    },
+    {
+      "text": "Choose a player to start over.",
+      "move": 0,
+      "effect": "target_goto",
+      "value": 1
+    },
+    {
+      "text": "Choose a player and move them to any Space (1–100).",
+      "move": 0,
+      "effect": "target_choose_goto",
+      "value": 0
+    }
+  ]
+}
